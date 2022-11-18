@@ -1,0 +1,68 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+img{vertical-align: middle; border: 0; }
+body{
+    font-size: 16px;
+    color: #000;
+    height: 5000px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    color: #000;
+    z-index: 1;
+}
+.header .header-wrap{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 80px;
+    vertical-align: middle;
+}
+.header .header-wrap::after{content: ""; display: block; clear: both;}
+
+.logo{float: left; margin-left: 50px;}
+
+.nav{display: inline-block;}
+.nav ul li{float: left; margin-left: 55px;}
+
+.nav a{padding: 20px; font-size: 19px; font-weight: bold;}
+
+.lang{float: right; padding-right: 40px;}
+
+.lang a:not(:nth-child(1))::after{
+    content: "";
+    width: 1px; height: 15px;
+    background-color: #aaa;
+    position: absolute;
+    right: 73px;
+    top: 32px;
+}
+.slide-bg{
+    width: 100%;
+    height: 910px;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url("../images/img_visual01.png");
+    float: left;
+}
+.slide{position: absolute; top: 25%; left: 15%; line-height: 20px;}
+.slide .box{margin-bottom: 50px; width: 60px; height: 5px; background-color: red;}
+.slide span{float: left; font-size: 70px; color: #fff;  letter-spacing: -0.01em; font-weight: bold; display: block; line-height: 1.1;}
+.slide p{font-size: 21px; color: #fff; float: left; position: absolute; top: 120%;}
+
+.content{width: 100%; height: 883px;}
+.content .content-wrap{
+    width: 1200px; margin: 0 auto; position: relative;
+}
+
+.content .content-txt{text-align: center; position: relative; top: 100px;}
+.content .content-txt .content-box{width: 35px; height: 5px; background-color: red; position: absolute;  right: 50%; margin: 20px 0 10px;}
+.content .content-txt span{font-size: 44px; color: #111111; font-weight: bold;}
+.content .content-txt p{font-size: 16px; color: #444444; position: relative; top: 50px;}
